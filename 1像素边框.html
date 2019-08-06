@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 300000px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .content1 {
+            margin: 0px auto;
+            width: 1000px;
+        }
+
+        .a,
+        .c,
+        .d {
+            width: 20%;
+            background: #c9f;
+        }
+
+        .d {
+            background: red;
+        }
+
+        .b {
+            width: 40%;
+            background: yellow;
+        }
+
+        .cl {
+            clear: both;
+        }
+
+        .a,
+        .b,
+        .c,
+        .d {
+            height: 500px;
+            float: left;
+        }
+
+        @media screen and (max-width:800px) {
+
+
+            .c {
+                display: none;
+            }
+        }
+
+
+        .box2 {
+            height: 200px;
+            border-left: 1px solid red;
+            margin-left: 100px;
+        }
+
+        .box1 {
+            height: 200px;
+            position: relative;
+        }
+
+        .box1:after {
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            content: ' ';
+            width: 1px;
+            background: red;
+            height: 100%;
+            display: block;
+        }
+
+        @media (-webkit-min-device-pixel-ratio:2),
+        (min-device-pixel-ratio:2) {
+            .box1::after {
+                -webkit-transform: scaley(0.5);
+                transform: scaley(0.5);
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.5),
+        (min-device-pixel-ratio:1.5) {
+            .box1::after {
+                -webkit-transform: scaley(0.7);
+                transform: scaley(0.7);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content1">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="cl"></div>
+        </div>
+    </div>
+
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+</body>
+
+</html>

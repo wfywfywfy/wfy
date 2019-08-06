@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html,body {
+    font-size: 62.5%;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cl {
+    clear: both;
+}
+header {
+    position: relative;
+background: rgb(23, 23, 216);
+padding: 20px 0px 7px 10px;
+}
+header .h-contain {
+    /* padding-left: 10px; */
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+header .h-contain1 {
+    /* position: absolute; */
+    padding-left: 10px;
+    border:#aaa 1px solid;
+   width: 300px;
+   margin: 0px auto;
+   height: 30px;
+   background: #fff;
+}
+header .h-contain1 input {
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 100%;
+}
+.contain {
+    width: 100%;
+     position: relative; 
+    overflow: hidden;
+}
+.moren {
+    /* float: left; */
+    position: absolute;
+    z-index: -1;
+    /* z-index: 5;
+    width: 100%; */
+}
+
+.moren img {
+    width: 100%;
+    
+}
+.imglist {
+    /* position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10; */
+  width: 100%;
+}
+.imglistul {
+    width: 100%;
+    font-size: 0px;
+   
+}
+.imglistul li {
+    display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+.imglist img {
+    width: 100%;
+     /* float: left; */
+}
+.dotlist {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+.dotlistul {
+font-size: 0px;
+/* margin: 0px auto; */
+}
+.dotlistli {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #000;
+    
+    margin: 0px 5px;
+}
+.layer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 11;
+    background: #000;
+    opacity: 0;
+    display: none;
+}
+.m-contain {
+    font-size: 0px;
+    margin-top: 20px;
+}
+.m-contain1 {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    /* padding: 0px 5px; */
+}
+.m-contain1 img {
+    width: 70%;
+}
+.m-contain1 span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 5px 0px 20px 0px;
+}
+.m-quaa {
+    padding: 0px 10px;
+}
+.m-qua {
+    padding-left: 10px;
+    background: #ddd;
+    padding-top: 20px;
+    line-height: 2;
+}
+.m-qua h3 {
+    font-size: 1.6rem;
+
+}
+.m-qua p {
+    font-size: 1.3rem;
+}
+.m-qua span {
+    font-size: 1.3rem;
+    color: #af8260;
+}
+.m-qua2 {
+    width: 20rem;
+    height: 15rem;
+}
+.m-qua2 img {
+width: 100%;
+}

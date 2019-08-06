@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>手势轮播图</title>
+    <link rel="stylesheet" type="text/css" href="./css/shoushi.css">
+    <script src="./js/shoushi.js"></script>
+    <script>
+        // ; (function () {
+        //     var e = window.document,
+        //         t = e.documentElement,
+
+        //         o = "orientationchange" in window ? "orientationchange" : "resize",
+        //         baseVal = 62.5,
+        //         b = function () {
+        //             var winWidth = t.clientWidth,
+        //                 resultFontSize = 62.5;
+        //             if (winWidth <= 360) {
+        //                 resultFontSize = baseVal;
+        //             } else if (winWidth <= 960) {
+        //                 resultFontSize = baseVal + ((winWidth - 320) / 1020) * 100;
+        //             } else {
+        //                 resultFontSize = 126;
+        //             }
+        //             // console.log(t);
+        //             t.style.fontSize = resultFontSize + "%";
+
+        //         }
+        //     e.addEventListener && (window.addEventListener(o, b, !1), e.addEventListener('DOMContentLoaded', b, !1))
+        //     // console.log(t);
+        // })();
+        /* 优化写法 */
+        !(function () {
+            var e = window.document,
+                t = e.documentElement,
+                o = "orientationchange" in window ? "orientationchange" : "resize",
+                baseVal = 62.5, //基础值
+                b = function () {
+                    //屏幕的宽度
+                    var winWidth = t.clientWidth,
+                        resultFontSize = 62.5;
+                    //屏幕的最小阈值：320
+                    //屏幕的最大阈值：960
+                    if (winWidth <= 320) {
+                        resultFontSize = baseVal;
+                    } else if (winWidth <= 960) {
+                        resultFontSize = baseVal + ((winWidth - 320) /
+                            1020) * 100;
+                    } else {
+                        //如果超过960，页面始终以126%
+                        resultFontSize = 126;
+                    }
+                    t.style.fontSize = resultFontSize + "%";
+                };
+            e.addEventListener &&
+                (window.addEventListener(o, b, !1), e.addEventListener("DOMContentLoaded", b, !1))
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="h-contain"><span>榕苑</span></div>
+        <div class="h-contain1"><input type="text" placeholder="搜索饿了么商家"></div>
+    </header>
+    <main>
+        <div class="contain" id="contain">
+            <div class="layer"></div>
+            <div class="moren">
+                <img src="./images/未标题-1.png">
+            </div>
+            <div class="imglist">
+                <ul class="imglistul">
+                    <li class="imglistli"><img src="./images/08e8f9eaef421f0f.jpg.webp"></li>
+                    <li class="imglistli"><img src="./images/b5b2187beb0444b9.jpg.webp"></li>
+                    <li class="imglistli"><img src="./images/c9b242e38f903511.jpg.webp"></li>
+                </ul>
+            </div>
+            <div class="dotlist">
+                <ul class="dotlistul">
+                    <li class="dotlistli "></li>
+                    <li class="dotlistli"></li>
+                    <li class="dotlistli"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m-contain">
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/1.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/2.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/3.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/4.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/5.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/6.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/7.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/8.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/9.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+            <div class="m-contain1">
+                <div>
+                    <img src='./images/10.webp'>
+                </div>
+                <span>美食</span>
+            </div>
+        </div>
+        <div class="m-quaa">
+            <div class="m-qua">
+                <div class="m-qua1 fl">
+                    <h3>品质套餐</h3>
+                    <p>搭配齐全吃的好</p>
+                    <span>立即抢购》</span>
+                </div>
+                <div class="m-qua2 fr"><img src="./images/11.webp"></div>
+                <div class="cl"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        window.onload = function () {
+            var a = new aa({
+                id: 'contain'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
